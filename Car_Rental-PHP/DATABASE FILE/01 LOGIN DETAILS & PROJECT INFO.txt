@@ -1,0 +1,23 @@
+**Database Name: car_rental**
+
+
+
+**Customer Login Details**
+
+Username: lucas
+Password: password
+
+Username: anita
+password: pass123
+
+
+**Employee Login Details**
+
+Username: harry
+Password: password
+
+Username: jenny
+Password: jenny
+
+Username:abudhathoki
+Password: pass123
