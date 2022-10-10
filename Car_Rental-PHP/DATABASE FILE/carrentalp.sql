@@ -27,15 +27,15 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `cars` (
-`car_id` int(20) NOT NULL,
-  `car_name` varchar(50) NOT NULL,
-  `car_nameplate` varchar(50) NOT NULL,
-  `car_img` varchar(50) DEFAULT 'NA',
+`car_id` int(200) NOT NULL,
+  `car_name` varchar(250) NOT NULL,
+  `car_nameplate` varchar(250) NOT NULL,
+  `car_img` varchar(500) DEFAULT 'NA',
   `ac_price` float NOT NULL,
   `non_ac_price` float NOT NULL,
   `ac_price_per_day` float NOT NULL,
   `non_ac_price_per_day` float NOT NULL,
-  `car_availability` varchar(10) NOT NULL
+  `car_availability` varchar(210) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
@@ -64,8 +64,8 @@ INSERT INTO `cars` (`car_id`, `car_name`, `car_nameplate`, `car_img`, `ac_price`
 --
 
 CREATE TABLE IF NOT EXISTS `clientcars` (
-  `car_id` int(20) NOT NULL,
-  `client_username` varchar(50) NOT NULL
+  `car_id` int(200) NOT NULL,
+  `client_username` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -94,12 +94,12 @@ INSERT INTO `clientcars` (`car_id`, `client_username`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `clients` (
-  `client_username` varchar(50) NOT NULL,
-  `client_name` varchar(50) NOT NULL,
-  `client_phone` varchar(15) NOT NULL,
-  `client_email` varchar(25) NOT NULL,
-  `client_address` varchar(50) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL,
-  `client_password` varchar(20) NOT NULL
+  `client_username` varchar(250) NOT NULL,
+  `client_name` varchar(255) NOT NULL,
+  `client_phone` varchar(20) NOT NULL,
+  `client_email` varchar(255) NOT NULL,
+  `client_address` varchar(255) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL,
+  `client_password` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -118,12 +118,12 @@ INSERT INTO `clients` (`client_username`, `client_name`, `client_phone`, `client
 --
 
 CREATE TABLE IF NOT EXISTS `customers` (
-  `customer_username` varchar(50) NOT NULL,
-  `customer_name` varchar(50) NOT NULL,
-  `customer_phone` varchar(15) NOT NULL,
-  `customer_email` varchar(25) NOT NULL,
-  `customer_address` varchar(50) NOT NULL,
-  `customer_password` varchar(20) NOT NULL
+  `customer_username` varchar(250) NOT NULL,
+  `customer_name` varchar(220) NOT NULL,
+  `customer_phone` varchar(125) NOT NULL,
+  `customer_email` varchar(225) NOT NULL,
+  `customer_address` varchar(250) NOT NULL,
+  `customer_password` varchar(220) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -144,14 +144,14 @@ INSERT INTO `customers` (`customer_username`, `customer_name`, `customer_phone`,
 --
 
 CREATE TABLE IF NOT EXISTS `driver` (
-`driver_id` int(20) NOT NULL,
-  `driver_name` varchar(50) NOT NULL,
-  `dl_number` varchar(50) NOT NULL,
+`driver_id` int(220) NOT NULL,
+  `driver_name` varchar(250) NOT NULL,
+  `dl_number` varchar(150) NOT NULL,
   `driver_phone` varchar(15) NOT NULL,
-  `driver_address` varchar(50) NOT NULL,
-  `driver_gender` varchar(10) NOT NULL,
-  `client_username` varchar(50) NOT NULL,
-  `driver_availability` varchar(10) NOT NULL
+  `driver_address` varchar(250) NOT NULL,
+  `driver_gender` varchar(110) NOT NULL,
+  `client_username` varchar(250) NOT NULL,
+  `driver_availability` varchar(110) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
@@ -175,9 +175,9 @@ INSERT INTO `driver` (`driver_id`, `driver_name`, `dl_number`, `driver_phone`, `
 --
 
 CREATE TABLE IF NOT EXISTS `feedback` (
-  `name` varchar(20) NOT NULL,
-  `e_mail` varchar(30) NOT NULL,
-  `message` varchar(150) NOT NULL
+  `name` varchar(220) NOT NULL,
+  `e_mail` varchar(230) NOT NULL,
+  `message` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -195,19 +195,19 @@ INSERT INTO `feedback` (`name`, `e_mail`, `message`) VALUES
 
 CREATE TABLE IF NOT EXISTS `rentedcars` (
 `id` int(100) NOT NULL,
-  `customer_username` varchar(50) NOT NULL,
-  `car_id` int(20) NOT NULL,
-  `driver_id` int(20) NOT NULL,
+  `customer_username` varchar(500) NOT NULL,
+  `car_id` int(200) NOT NULL,
+  `driver_id` int(200) NOT NULL,
   `booking_date` date NOT NULL,
   `rent_start_date` date NOT NULL,
   `rent_end_date` date NOT NULL,
   `car_return_date` date DEFAULT NULL,
   `fare` double NOT NULL,
-  `charge_type` varchar(25) NOT NULL DEFAULT 'days',
+  `charge_type` varchar(205) NOT NULL DEFAULT 'days',
   `distance` double DEFAULT NULL,
-  `no_of_days` int(50) DEFAULT NULL,
+  `no_of_days` int(500) DEFAULT NULL,
   `total_amount` double DEFAULT NULL,
-  `return_status` varchar(10) NOT NULL
+  `return_status` varchar(110) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=574681260 DEFAULT CHARSET=utf8;
 
 --

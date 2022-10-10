@@ -1,4 +1,4 @@
-**Database Name: car_rental**
+**Database Name: Car_rental**
 
 **Recommended PHP Version 5.6.3 and 7.4.12**
 
