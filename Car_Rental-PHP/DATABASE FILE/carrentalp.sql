@@ -52,7 +52,7 @@ INSERT INTO `cars` (`car_id`, `car_name`, `car_nameplate`, `car_img`, `ac_price`
 (8, 'Land Rover Range Rover Sport', 'GA5KH9669', 'assets/img/cars/rangero.jpg', 16, 10, 60, 46, 'yes'),
 (9, 'MG Hector', 'GA6PA6666', 'assets/img/cars/mghector.jpg', 20, 12, 59, 44, 'yes'),
 (10, 'Honda CR-V', 'TN17MS1997', 'assets/img/cars/hondacr.jpg', 22, 15, 35, 40, 'yes'),
-(11, 'Mahindra XUV 500', 'KA12EX1883', 'assets/img/cars/Mahindra XUV.jpg', 15, 13, 30, 26, 'yes'),
+(11, 'XUV 500', 'KA12EX1883', 'assets/img/cars/XUV.jpg', 15, 13, 30, 26, 'yes'),
 (12, 'Toyota Fortuner', 'GA08MX1997', 'assets/img/cars/Fortuner.png', 16, 14, 32, 28, 'yes'),
 (13, 'Hyundai Veloster', 'BA20PA5685', 'assets/img/cars/hyundai0.png', 23, 15, 45, 35, 'yes'),
 (14, 'Jaguar XF', 'GA8KH8866', 'assets/img/cars/jaguarxf.jpg', 39, 29, 61, 43, 'yes');
