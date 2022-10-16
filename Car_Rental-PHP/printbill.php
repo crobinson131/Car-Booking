@@ -205,7 +205,7 @@ else {
             if($charge_type == "days"){
                     echo ($fare . "/day");
                 } else {
-                    echo ($fare . "/km");
+                    echo ($fare . "/mi");
                 }
             ?></h4>
                 <br>
@@ -227,10 +227,10 @@ else {
                     if($extra_days > 0){
                         
                 ?>
-                <h4> <strong>Total Fine:</strong> <label class="text-danger"> Rs. <?php echo $total_fine; ?>/- </label> for <?php echo $extra_days;?> extra days.</h4>
+                <h4> <strong>Total Fine:</strong> <label class="text-danger"> $. <?php echo $total_fine; ?>/- </label> for <?php echo $extra_days;?> extra days.</h4>
                 <br>
                 <?php } ?>
-                <h4> <strong>Total Amount: </strong> Rs. <?php echo $total_amount; ?>/-     </h4>
+                <h4> <strong>Total Amount: </strong> $. <?php echo $total_amount; ?>/-     </h4>
                 <br>
             </div>
         </div>

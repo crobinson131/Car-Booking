@@ -171,7 +171,7 @@
                 <li>
                     <a class="cd-faq-trigger" href="#0">Is there a fee if i return the car after the due date?</a>
                     <div class="cd-faq-content">
-                        <p>Yes, we charge ₹200/- day after the due date.</p>
+                        <p>Yes, we charge $50 day after the due date.</p>
                     </div>
                     <!-- cd-faq-content -->
                 </li>
