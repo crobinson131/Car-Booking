@@ -185,7 +185,7 @@ CREATE TABLE IF NOT EXISTS `feedback` (
 --
 
 INSERT INTO `feedback` (`name`, `e_mail`, `message`) VALUES
-('Nikhil', 'nikhil@gmail.com', 'Hope this works.');
+('Anira', 'anita@gmail.com', 'Hope this works.');
 
 -- --------------------------------------------------------
 
