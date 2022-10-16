@@ -166,9 +166,9 @@ $conn = Connect();
 
                     <img class="card-img-top" src="<?php echo $car_img; ?>" alt="Card image cap">
                     <h5><b> <?php echo $car_name; ?> </b></h5>
-                    <h6> AC Fare: <?php echo ("$. " . $ac_price . "/mi & $." . $ac_price_per_day . "/day"); ?></h6>
+                    <h6> AC Fare: <?php echo ("$" . $ac_price . "/mi & $" . $ac_price_per_day . "/day"); ?></h6>
                     <h6> Non-AC Fare:
-                        <?php echo ("$. " . $non_ac_price . "/mi & $." . $non_ac_price_per_day . "/day"); ?></h6>
+                        <?php echo ("$" . $non_ac_price . "/mi & $" . $non_ac_price_per_day . "/day"); ?></h6>
 
 
                 </div>
