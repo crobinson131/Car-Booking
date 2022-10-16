@@ -3,7 +3,7 @@
 function Connect()
 {
 	$dbhost = "localhost";
-	$dbuser = "anita";
+	$dbuser = "root";
 	$dbpass = "pass123";
 	$dbname = "car_rental";
 
