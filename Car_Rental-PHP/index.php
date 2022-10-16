@@ -113,6 +113,9 @@ $conn = Connect();
                     <li>
                         <a href="faq/index.php"> FAQ </a>
                     </li>
+                    <li>
+                        <a href="contact.php"> Contact us</a>
+                    </li>
                 </ul>
             </div>
             <?php   }
