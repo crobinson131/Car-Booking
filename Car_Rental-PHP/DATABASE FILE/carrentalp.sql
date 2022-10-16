@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `cars` (
 `car_id` int(200) NOT NULL,
   `car_name` varchar(250) NOT NULL,
   `car_nameplate` varchar(250) NOT NULL,
-  `car_img` varchar(500) DEFAULT 'NA',
+  `car_img` varchar(255) DEFAULT 'NA',
   `ac_price` float NOT NULL,
   `non_ac_price` float NOT NULL,
   `ac_price_per_day` float NOT NULL,
