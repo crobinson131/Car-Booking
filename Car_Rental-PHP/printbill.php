@@ -145,7 +145,7 @@ function dateDiff($start, $end) {
 }
 
 $extra_days = dateDiff("$rent_end_date", "$car_return_date");
-$total_fine = $extra_days*200;
+$total_fine = $extra_days*50;
 
 $duration = dateDiff("$rent_start_date","$rent_end_date");
 
@@ -201,7 +201,7 @@ else {
                 <br>
                 <h4> <strong>Vehicle Number:</strong> <?php echo $car_nameplate; ?></h4>
                 <br>
-                <h4> <strong>Fare:&nbsp;</strong>  Rs. <?php 
+                <h4> <strong>Fare:&nbsp;</strong>  $ <?php 
             if($charge_type == "days"){
                     echo ($fare . "/day");
                 } else {
@@ -220,7 +220,7 @@ else {
                 <?php if($charge_type == "days"){?>
                     <h4> <strong>Number of days:</strong> <?php echo $distance_or_days; ?>day(s)</h4>
                 <?php } else { ?>
-                    <h4> <strong>Distance Travelled:</strong> <?php echo $distance_or_days; ?>km(s)</h4>
+                    <h4> <strong>Distance Travelled:</strong> <?php echo $distance_or_days; ?>mi(s)</h4>
                 <?php } ?>
                 <br>
                 <?php

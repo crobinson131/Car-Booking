@@ -200,7 +200,7 @@ if (!isset($_SESSION['login_customer'])) {
                         </div>
 
                         <h5> Charge type: &nbsp;
-                            <input onclick="reveal()" type="radio" name="radio1" value="km"><b> per KM</b> &nbsp;
+                            <input onclick="reveal()" type="radio" name="radio1" value="mi"><b> per mile</b> &nbsp;
                             <input onclick="reveal()" type="radio" name="radio1" value="days"><b> per day</b>
 
                             <br><br>

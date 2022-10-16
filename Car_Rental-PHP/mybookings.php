@@ -153,11 +153,11 @@ $conn = Connect();
                 <td><?php echo $row["car_name"]; ?></td>
                 <td><?php echo $row["rent_start_date"] ?></td>
                 <td><?php echo $row["rent_end_date"]; ?></td>
-                <td>Rs. <?php
+                <td>$ <?php
                                 if ($row["charge_type"] == "days") {
                                     echo ($row["fare"] . "/day");
                                 } else {
-                                    echo ($row["fare"] . "/km");
+                                    echo ($row["fare"] . "/mi");
                                 }
                                 ?></td>
                 <td><?php if ($row["charge_type"] == "days") {
@@ -166,7 +166,7 @@ $conn = Connect();
                                 echo ($row["distance"]);
                             } ?></td>
                 <td><?php echo $row["no_of_days"]; ?> </td>
-                <td>Rs. <?php echo $row["total_amount"]; ?></td>
+                <td>$ <?php echo $row["total_amount"]; ?></td>
             </tr>
             <?php        } ?>
         </table>

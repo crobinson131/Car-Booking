@@ -51,11 +51,11 @@ if(!isset($_SESSION['login_customer'])){
     if (mysqli_num_rows($result0) > 0) {
         while($row0 = mysqli_fetch_assoc($result0)) {
 
-            if($type == "ac" && $charge_type == "km"){
+            if($type == "ac" && $charge_type == "mi"){
                 $fare = $row0["ac_price"];
             } else if ($type == "ac" && $charge_type == "days"){
                 $fare = $row0["ac_price_per_day"];
-            } else if ($type == "non_ac" && $charge_type == "km"){
+            } else if ($type == "non_ac" && $charge_type == "mi"){
                 $fare = $row0["non_ac_price"];
             } else if ($type == "non_ac" && $charge_type == "days"){
                 $fare = $row0["non_ac_price_per_day"];
@@ -229,7 +229,7 @@ if(!isset($_SESSION['login_customer'])){
                      <h4> <strong>Fare:</strong> $ <?php echo $fare; ?>/day</h4>
                 <?php } else {
                     ?>
-                    <h4> <strong>Fare:</strong> $ <?php echo $fare; ?>/km</h4>
+                    <h4> <strong>Fare:</strong> $ <?php echo $fare; ?>/mi</h4>
 
                 <?php } ?>
 

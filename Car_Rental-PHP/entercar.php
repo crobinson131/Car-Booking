@@ -122,19 +122,19 @@ include('session_client.php'); ?>
           </div>     
 
           <div class="form-group">
-            <input type="text" class="form-control" id="ac_price" name="ac_price" placeholder="AC Fare per KM (Rs)" required>
+            <input type="text" class="form-control" id="ac_price" name="ac_price" placeholder="AC Fare per miles ($)" required>
           </div>
 
           <div class="form-group">
-            <input type="text" class="form-control" id="non_ac_price" name="non_ac_price" placeholder="Non-AC Fare per KM (Rs)" required>
+            <input type="text" class="form-control" id="non_ac_price" name="non_ac_price" placeholder="Non-AC Fare per miles ($)" required>
           </div>
 
           <div class="form-group">
-            <input type="text" class="form-control" id="ac_price_per_day" name="ac_price_per_day" placeholder="AC Fare per day (Rs)" required>
+            <input type="text" class="form-control" id="ac_price_per_day" name="ac_price_per_day" placeholder="AC Fare per day ($)" required>
           </div>
 
           <div class="form-group">
-            <input type="text" class="form-control" id="non_ac_price_per_day" name="non_ac_price_per_day" placeholder="Non-AC Fare per day (Rs)" required>
+            <input type="text" class="form-control" id="non_ac_price_per_day" name="non_ac_price_per_day" placeholder="Non-AC Fare per day ($)" required>
           </div>
 
           <div class="form-group">
@@ -166,8 +166,8 @@ if (mysqli_num_rows($result) > 0) {
         <th></th>
         <th width="24%"> Name</th>
         <th width="15%"> Nameplate </th>
-        <th width="13%"> AC Fare (/km) </th>
-        <th width="17%"> Non-AC Fare (/km)</th>
+        <th width="13%"> AC Fare (/mi) </th>
+        <th width="17%"> Non-AC Fare (/mi)</th>
         <th width="13%"> AC Fare (/day)</th>
         <th width="17%"> Non-AC Fare (/day)</th>
         <th width="1%"> Availability </th>

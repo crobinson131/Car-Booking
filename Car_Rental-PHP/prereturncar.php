@@ -149,7 +149,7 @@ $conn = Connect();
     if($row["charge_type"] == "days"){
         echo ($row["fare"] . "/day");
     } else {
-        echo ($row["fare"] . "/km");
+        echo ($row["fare"] . "/mi");
     }
  
 
