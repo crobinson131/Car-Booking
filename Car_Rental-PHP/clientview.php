@@ -30,7 +30,6 @@ $conn = Connect();
             <!-- Collect the nav links, forms, and other content for toggling -->
 
             <?php
-                //testing commit
                 if(isset($_SESSION['login_client'])){
             ?> 
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
