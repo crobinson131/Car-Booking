@@ -189,7 +189,7 @@ $conn = Connect();
         <hr>
         <div class="row">
             <div class="col-sm-6">
-                <h5>© <?php echo date("Y"); ?> Car Rentals</h5>
+                <h5>© <?php echo date("Y"); ?> Anita and Caitlyn Car Rentals</h5>
             </div>
         </div>
     </div>
