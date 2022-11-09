@@ -10,7 +10,7 @@ else
 {
 // Define $username and $password
 $customer_username=$_POST['customer_username'];
-$customer_password=$_POST['customer_password'];
+$customer_password= md5($_POST['customer_password']);
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
 require 'connection.php';
 $conn = Connect();
